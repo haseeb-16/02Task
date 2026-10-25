@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=deviice-width, initial-scale=1.0">
+        <title> Intern Registration Page</title>
+    </head>
+    <body>
+        <header>
+            <h1>Intern Registration Form</h1>
+            <p>Welcome! Complete this form to apply for our internship program.</p>
+            <hr>
+        </header>
+        <main>
+            <section id="introduction">
+                <h2>About the program</h2>
+                <p>Welcome Students and Fresh graduates intrested in learning new skills</p>
+                <p>Please complete all fields and submit the form.</p>
+            </section>
+            <hr>
+            <section id="registration">
+                <h2>Registration Form</h2>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <P>
+                            <label for="first-name">First Name:</label>
+                            <input type="text" id="first-name" name="first_name" placeholder="Enter your first name" autocomplete="given-name" required>
+                        </P>
+                        <p>
+                            <label for="last-name">Last Name:</label>
+                            <input type="text" id="last-name" name="last_name" placeholder="Enter your last name" autocomplete="family-name" required> 
+                        </p>
+                        <p>
+                            <label for="email">Email Address:</label>
+                            <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+92 300 1234567" autocomplete="tel" pattern="[+]?[0-9 ]{10,16}" required>
+                        </p>
+                        <p>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="date_of_birth" autocomplete="bady" required>
+                        </p>
+                        <p>Gender:</p>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Education and skills</legend>
+                        <p>
+                        <label for="education">Highest Education:</label>
+                        <select id="education" name="education" required>
+                        <option value="" selected disabled>
+                        Select your education
+                        </option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="bachelors">Bachelor's Degree</option>
+                        <option value="masters">Master's Degree</option>
+                        <option value="other">Other</option>
+                        </select>
+                        </p>
+                        <p>
+                            <label for="degree">Degree or Program:</label>
+                            <input type="text" id="degree" name="degree" placeholder="e.g. BS Computer Science" required>
+                        </p>
+                        <p>
+                            <label for="skills">Search for a skill:</label>
+                            <input type="search" id="skills" name="skill_search" placeholder="Search Python, AI, Web Development">
+                        </p>
+                        <p>
+                            <label for="skill-level">Rate Your Current Skill Level (1-10):</label>
+                            <input type="range" id="skill-level" name="skill_level" min="1" max="10" step="1" value="5">
+                        </p>
+                        <p>
+                            <label for="milestone">Current Career Milestone:</label>
+                            <select id="milestone" name="milestone" required>
+                            <option value="" selected disabled>
+                            Select a milestone
+                            </option>
+                            <optgroup label="Education">
+                            <option value="student">Currently Studying</option>
+                            <option value="graduate">Fresh Graduate</option>
+                            </optgroup>
+                            <optgroup label="Career">
+                            <option value="beginner">Beginner</option>
+                            <option value="experienced">Some Experience</option>
+                            </optgroup>
+                        </select>
+                        </p>
+                        <p>Areas of Interest:</p>
+
+                    <input type="checkbox" id="ai" name="interests" value="ai">
+                    <label for="ai">Artificial Intelligence</label>
+                    <input type="checkbox" id="cv" name="interests" value="computer_vision">
+                    <label for="cv">Computer Vision</label>
+                    <input type="checkbox" id="web" name="interests" value="web_development">
+                    <label for="web">Web Development</label>
+                    <input type="checkbox" id="data" name="interests" value="data_science">
+                    <label for="data">Data Science</label>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Internship Preferences</legend>
+
+                    <p>
+                        <label for="interview-time">Preferred Interview Time:</label>
+                        <input type="time" id="interview-time" name="interview_time" required>
+                    </p>
+
+                    <p>
+                        <label for="training-month">Preferred Training Month:</label>
+                        <input type="month" id="training-month" name="training_month" required>
+                    </p>
+
+                    <p>
+                        <label for="training-week">Preferred Training Week:</label>
+                        <input type="week" id="training-week" name="training_week" required>
+                    </p>
+
+                    <p>
+                        <label for="portfolio">Portfolio URL:</label>
+                        <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com" autocomplete="url">
+                    </p>
+
+                    <p>
+                        <label for="resume">Upload Your Resume (PDF or DOCX):</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf,.docx" required>
+                    </p>
+
+                    <p>
+                        <label for="password">Create a Password:</label>
+                        <input type="password" id="password" name="password" placeholder="Enter a password" autocomplete="new-password" minlength="8" required>
+                    </p>
+
+                    <p>
+                        <label for="color">Preferred Theme Color:</label>
+                        <input type="color" id="color" name="preferred_color" value="#3366cc">
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Address and Additional Information</legend>
+                    <p>
+                        <label for="address">Full Address:</label>
+                        <textarea id="address" name="address"
+                                  rows="4" cols="40"
+                                  placeholder="Enter your city and address"
+                                  autocomplete="street-address" required></textarea>
+                    </p>
+                    <p>
+                        <label for="message">Additional Notes:</label>
+                        <textarea id="message" name="message"
+                                  rows="5" cols="40"
+                                  placeholder="Tell us about your goals or experience"></textarea>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Terms and Conditions</legend>
+                    <input type="checkbox" id="terms" name="terms"
+                           value="accepted" required>
+                    <label for="terms">
+                        I confirm that the information provided is accurate.
+                    </label>
+                </fieldset>
+                <br>
+                <button type="submit">Submit Registration</button>
+                <button type="reset">Reset Form</button>
+            </form>
+        </section>
+        <hr>
+        <section id="education-summary">
+            <h2>Course and Education Summary</h2>
+            <table>
+                <caption>Example Education Records</caption>
+                <colgroup>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th>
+                        <th scope="col">Qualification</th>
+                        <th scope="col">Institution</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Intermediate in Computer Science</td>
+                        <td>Punjab College</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>BS Computer Science</td>
+                        <td>Information Technology University</td>
+                        <td>Completed</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Web Development</td>
+                        <td>Online Learning</td>
+                        <td>In Progress</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="row" colspan="3">Total Records</th>
+                        <td>3</td>
+                </tr>
+            </tfoot>
+    </table>
+    </section>
+    </main>
+    <footer>
+    <hr>
+    <p><small>Thank you for your interest in our internship program.</small></p>
+    </footer>
+    </body>
+</html>
